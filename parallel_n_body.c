@@ -1,5 +1,9 @@
 /// ------------------------ Parallel Computing - Assignment 2 ------------------------------------------------------ //
-/// Authors: @ Shalom Yehuda Ben Yair @ Ron Zilbershtein ------------------------------------------------------------ //
+///  The code implements a parallel computation of the n-body problem,
+///  which simulates the gravitational interactions among a system of celestial bodies.
+///  The n-body problem calculates the positions and velocities of multiple bodies over time,
+///  considering the gravitational forces acting between them.
+/// Author: @ Ron Zilbershtein -------------------------------------------------------------------------------------- //
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -48,11 +52,6 @@ double *create_rand_nums(int);
 
 /// ------------------------ main() --------------------------------------------------------------------------------- //
 int main(int argc, char **argv) {
-    ///  The code implements a parallel computation of the n-body problem,
-    ///  which simulates the gravitational interactions among a system of celestial bodies.
-    ///  The n-body problem calculates the positions and velocities of multiple bodies over time,
-    ///  considering the gravitational forces acting between them.
-
     srand(time(NULL)); //  NOLINT(cert-msc30-c, cert-msc51-cpp) this comment shuts down a compilation warning
     //  from the IDE that claims srand's randomness is limited
 
